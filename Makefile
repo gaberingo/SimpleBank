@@ -30,7 +30,7 @@ migrateup_last:
 migratedown_last:
 	migrate --path db/migration --database "postgresql://root:rootpass@localhost:5432/simple_bank?sslmode=disable" --verbose down 1
 
-# Generate sqlc
+# Generate sqlc go code from query
 sqlc:
 	sqlc generate
 
